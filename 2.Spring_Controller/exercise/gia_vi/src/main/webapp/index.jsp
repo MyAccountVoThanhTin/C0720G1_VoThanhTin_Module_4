@@ -11,8 +11,19 @@
     <title>$Title$</title>
   </head>
   <body>
-  <form action="">
-   checkbox
-  </form>
+  <div class="container">
+    <form action="/save">
+      <input type="checkbox" name="condiment" id="lettuce" value="lettuce">
+      <lable for="lettuce">Lettuce</lable><br>
+      <input type="checkbox" name="condiment" id="tomato" value="tomato">
+      <lable for="tomato">Tomato</lable><br>
+      <input type="checkbox" name="condiment" id="mustard" value="mustard">
+      <lable for="mustard">Mustard</lable><br>
+      <input type="checkbox" name="condiment" id="sprouts" value="sprouts">
+      <lable for="sprouts">Sprouts</lable><br>
+      <hr>
+      <input type="submit" value="Save">
+    </form>
+  </div>
   </body>
 </html>
