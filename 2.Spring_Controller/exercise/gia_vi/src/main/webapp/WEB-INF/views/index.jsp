@@ -24,7 +24,7 @@
         <hr>
         <input type="submit" value="Save">
     </form>
-    <lable>List is : ${list}</lable>
+    <lable>${list}</lable>
 </div>
 </body>
 </html>

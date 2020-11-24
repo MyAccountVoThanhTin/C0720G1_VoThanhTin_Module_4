@@ -6,7 +6,27 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ea97f8b-ffad-47f3-a36f-2e4c6fa8ddb5" name="Default Changelist" comment="" />
+    <list default="true" id="3ea97f8b-ffad-47f3-a36f-2e4c6fa8ddb5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../exercise/may_tinh_don_gian/.idea/modules/may_tinh_don_gian.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/may_tinh_don_gian/src/main/java/controller/CaculatorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/may_tinh_don_gian/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/may_tinh_don_gian/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/may_tinh_don_gian/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/may_tinh_don_gian/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercise/gia_vi/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/gia_vi/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercise/gia_vi/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/gia_vi/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercise/gia_vi/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/gia_vi/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercise/gia_vi/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/gia_vi/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercise/gia_vi/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/gia_vi/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercise/gia_vi/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/gia_vi/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercise/gia_vi/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/gia_vi/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercise/gia_vi/build/classes/java/main/controller/CondimentsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/gia_vi/build/classes/java/main/controller/CondimentsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercise/gia_vi/build/libs/gia_vi-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/gia_vi/build/libs/gia_vi-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercise/gia_vi/src/main/java/controller/CondimentsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/gia_vi/src/main/java/controller/CondimentsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercise/gia_vi/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/gia_vi/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +42,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -30,6 +53,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1kgHulXTnapVEVnRc2HolgilXqP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -37,10 +61,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="D:/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/Codegym/002-teach/02-theory-support/jsp/jsp-jstl/jstl-1.2.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -222,6 +247,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606115538910</updated>
       <workItem from="1606115543370" duration="3737000" />
+      <workItem from="1606183298058" duration="1469000" />
     </task>
     <servers />
   </component>
