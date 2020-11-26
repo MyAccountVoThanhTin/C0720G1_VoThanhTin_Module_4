@@ -23,7 +23,6 @@ public class HomThuController {
         listLanguages.add("Vietnamese");
         listLanguages.add("Japanese");
         listLanguages.add("Chinese");
-        String[] ar = {};
         model.addAttribute("listLanguages",listLanguages);
         int[] pageSize = {5,10,15, 25, 50, 100};
         model.addAttribute("pageSize",pageSize);

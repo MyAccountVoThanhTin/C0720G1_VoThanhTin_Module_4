@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/comback"  th:object="${product}">
+    <p>Id: </p>
+    <input type="text" th:field="*{id}" readonly>
+    <p>Name: </p>
+    <input type="text" th:field="*{name}" readonly>
+    <p>NSX: </p>
+    <input type="text" th:field="*{nsx}" readonly>
+    <p>Address: </p>
+    <input type="text" th:field="*{address}" readonly>
+    <input type="submit" value="Comback List">
+</form>
+</body>
+</html>

@@ -7,25 +7,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ea97f8b-ffad-47f3-a36f-2e4c6fa8ddb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../exercise/may_tinh_don_gian/.idea/modules/may_tinh_don_gian.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/may_tinh_don_gian/src/main/java/controller/CaculatorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/may_tinh_don_gian/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/may_tinh_don_gian/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/may_tinh_don_gian/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/may_tinh_don_gian/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercise/gia_vi/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/gia_vi/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercise/gia_vi/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/gia_vi/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercise/gia_vi/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/gia_vi/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercise/gia_vi/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/gia_vi/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercise/gia_vi/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/gia_vi/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercise/gia_vi/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/gia_vi/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercise/gia_vi/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/gia_vi/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercise/gia_vi/build/classes/java/main/controller/CondimentsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/gia_vi/build/classes/java/main/controller/CondimentsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercise/gia_vi/build/libs/gia_vi-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/gia_vi/build/libs/gia_vi-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercise/gia_vi/src/main/java/controller/CondimentsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/gia_vi/src/main/java/controller/CondimentsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercise/gia_vi/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/gia_vi/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3.Views_Thymeleaf/exercise/quan_li_san_pham/src/main/java/com/codegym/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3.Views_Thymeleaf/exercise/quan_li_san_pham/src/main/java/com/codegym/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3.Views_Thymeleaf/exercise/quan_li_san_pham/src/main/java/com/codegym/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3.Views_Thymeleaf/exercise/quan_li_san_pham/src/main/java/com/codegym/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3.Views_Thymeleaf/exercise/quan_li_san_pham/src/main/java/com/codegym/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3.Views_Thymeleaf/exercise/quan_li_san_pham/src/main/java/com/codegym/service/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3.Views_Thymeleaf/exercise/quan_li_san_pham/src/main/webapp/WEB-INF/views/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3.Views_Thymeleaf/exercise/quan_li_san_pham/src/main/webapp/WEB-INF/views/showlist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3.Views_Thymeleaf/exercise/quan_li_san_pham/src/main/webapp/WEB-INF/views/viewsdetails.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3.Views_Thymeleaf/practices/danh_sach_khach_hang/src/main/java/com/codegym/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3.Views_Thymeleaf/practices/danh_sach_khach_hang/src/main/java/com/codegym/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3.Views_Thymeleaf/practices/danh_sach_khach_hang/src/main/java/com/codegym/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3.Views_Thymeleaf/practices/danh_sach_khach_hang/src/main/java/com/codegym/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3.Views_Thymeleaf/practices/danh_sach_khach_hang/src/main/java/com/codegym/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3.Views_Thymeleaf/practices/danh_sach_khach_hang/src/main/java/com/codegym/service/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3.Views_Thymeleaf/practices/danh_sach_khach_hang/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3.Views_Thymeleaf/practices/danh_sach_khach_hang/src/main/webapp/WEB-INF/views/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3.Views_Thymeleaf/practices/danh_sach_khach_hang/src/main/webapp/WEB-INF/views/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3.Views_Thymeleaf/practices/danh_sach_khach_hang/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3.Views_Thymeleaf/practices/danh_sach_khach_hang/src/main/webapp/WEB-INF/views/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3.Views_Thymeleaf/practices/danh_sach_khach_hang/src/main/webapp/WEB-INF/views/view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.Data_Binding_&amp;_Form/exercise/hom_thu_dien_tu/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4.Data_Binding_&amp;_Form/exercise/hom_thu_dien_tu/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.Data_Binding_&amp;_Form/exercise/hom_thu_dien_tu/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4.Data_Binding_&amp;_Form/exercise/hom_thu_dien_tu/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.Data_Binding_&amp;_Form/exercise/hom_thu_dien_tu/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4.Data_Binding_&amp;_Form/exercise/hom_thu_dien_tu/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.Data_Binding_&amp;_Form/exercise/hom_thu_dien_tu/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4.Data_Binding_&amp;_Form/exercise/hom_thu_dien_tu/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.Data_Binding_&amp;_Form/exercise/hom_thu_dien_tu/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4.Data_Binding_&amp;_Form/exercise/hom_thu_dien_tu/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.Data_Binding_&amp;_Form/exercise/hom_thu_dien_tu/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4.Data_Binding_&amp;_Form/exercise/hom_thu_dien_tu/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.Data_Binding_&amp;_Form/exercise/hom_thu_dien_tu/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4.Data_Binding_&amp;_Form/exercise/hom_thu_dien_tu/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.Data_Binding_&amp;_Form/exercise/hom_thu_dien_tu/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4.Data_Binding_&amp;_Form/exercise/hom_thu_dien_tu/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.Data_Binding_&amp;_Form/exercise/hom_thu_dien_tu/build/classes/java/main/com/codegym/controller/HomThuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4.Data_Binding_&amp;_Form/exercise/hom_thu_dien_tu/build/classes/java/main/com/codegym/controller/HomThuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.Data_Binding_&amp;_Form/exercise/hom_thu_dien_tu/out/artifacts/hom_thu_dien_tu_main_war_exploded/WEB-INF/classes/com/codegym/controller/HomThuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4.Data_Binding_&amp;_Form/exercise/hom_thu_dien_tu/out/artifacts/hom_thu_dien_tu_main_war_exploded/WEB-INF/classes/com/codegym/controller/HomThuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.Data_Binding_&amp;_Form/exercise/hom_thu_dien_tu/src/main/java/com/codegym/controller/HomThuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4.Data_Binding_&amp;_Form/exercise/hom_thu_dien_tu/src/main/java/com/codegym/controller/HomThuController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,6 +261,7 @@
       <updated>1606115538910</updated>
       <workItem from="1606115543370" duration="3737000" />
       <workItem from="1606183298058" duration="1795000" />
+      <workItem from="1606359117446" duration="7000" />
     </task>
     <servers />
   </component>
