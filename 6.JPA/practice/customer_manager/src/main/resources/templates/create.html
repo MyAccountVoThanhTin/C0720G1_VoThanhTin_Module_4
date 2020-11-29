@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout::header">
+</head>
+<body>
+<form action="/customer/create" method="post" th:object="${customer}">
+    <div class="form-group">
+        <label>Id:</label>
+        <input placeholder="Id Is Auto" readonly type="text" class="form-control" aria-describedby="emailHelp">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputFirstName">First Name:</label>
+        <input th:field="${customer.firstName}" type="text" class="form-control" id="exampleInputFirstName" aria-describedby="emailHelp">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputLastName">Last Name:</label>
+        <input th:field="${customer.lastName}" type="text" class="form-control" id="exampleInputLastName" aria-describedby="emailHelp">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputDayOfBirth">Day Of Birth:</label>
+        <input th:field="${customer.dateOfBirth}" type="date" class="form-control" id="exampleInputDayOfBirth" aria-describedby="emailHelp">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputImage">Image:</label>
+<!--        <input type="file" class="form-control-file">-->
+        <input required th:field="${customer.image}" type="file" class="form-control" id="exampleInputImage" aria-describedby="emailHelp">
+    </div>
+    <input type="submit" value="Save">
+</form>
+<footer th:replace="layout::footer"></footer>
+</body>
+<div th:replace="layout::scrip"></div>
+</html>

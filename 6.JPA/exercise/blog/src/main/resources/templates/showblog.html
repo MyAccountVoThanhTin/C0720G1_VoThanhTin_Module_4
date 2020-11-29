@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head">
+</head>
+<body>
+<form action="/getObject" method="get">
+    <button type="submit" class="btn btn-primary">Create New Blog</button>
+</form>
+<br>
+<div class="container-fluid">
+    <table class="table table-striped" id="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Content</th>
+            <th>Date</th>
+            <th>View</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="blog : ${listBlog}">
+            <td th:text="${blog.getId()}"></td>
+            <td th:text="${blog.title}"></td>
+            <td  data-toggle="tooltip" data-placement="top" th:title="${blog.getContent()}" th:text="${blog.getContent()}"></td>
+            <td th:text="${blog.getDate()}"></td>
+            <td><a th:href="@{view/{id}(id=${blog.id})}" class="btn btn-primary">View Detail</a></td>
+            <td><a th:href="@{edit/{id}(id=${blog.id})}" class="btn btn-danger">Edit</a></td>
+            <td><a th:href="@{delete/{id}(id=${blog.id})}" class="btn btn-dark">Delete</a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+<div th:replace="layout :: script"></div>
+<script>
+    $(document).ready(function () {
+        $("#table").dataTable({
+            "pageLength": 2
+        });
+    });
+</script>
+</html>
