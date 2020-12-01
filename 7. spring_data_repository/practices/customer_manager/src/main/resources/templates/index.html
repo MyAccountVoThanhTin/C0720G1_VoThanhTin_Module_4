@@ -6,8 +6,8 @@
 <div class="container">
     <nav class="navbar navbar-light bg-light">
         <a th:href="@{/customer/create}" class="navbar-brand btn-primary">Create New Customer</a>
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <form action="/customer/list" class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="keyword">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
     </nav>
@@ -21,6 +21,7 @@
             <th scope="col">Last Name</th>
             <th scope="col">Date Of Birth</th>
             <th scope="col">Image</th>
+            <th scope="col">Province</th>
             <th scope="col">Delete</th>
             <th scope="col">Edit</th>
             <th scope="col">View Details</th>
@@ -37,6 +38,7 @@
                     <img data-toggle="tooltip" data-placement="top" th:title="${customer.getImage()}" onclick="getImage(this.getAttribute('src'))" th:src="@{'/'+${customer.image}}" class="img-thumbnail" style="width: 50px;height: 50px"/>
                 </button>
             </td>
+            <td th:text="${customer.province.getName_province()}"></td>
             <td>
                 <button type="button" style="background-color: red" data-toggle="modal" data-target="#modelDelete">
                     <a th:id="${customer.getId()}" th:src="@{'/'+${customer.image}}" th:name="${customer.getFirstName()+' '+customer.getLastName()}" onclick="deletecustomer(this.getAttribute('name'),this.getAttribute('src'),this.getAttribute('id'))" class="btn btn-danger">Delete</a>
@@ -48,6 +50,10 @@
         </tr>
         </tbody>
     </table>
+    <a th:if="${listCustomer.hasPrevious()}" th:href="@{/customer/list(page = ${listCustomer.number -1},keyword =${keywordAfterCheck})}" class="btn btn-primary">Previous</a>
+    <span th:text="${listCustomer.number + 1}"></span>/<span th:text="${listCustomer.totalPages}"></span>
+    <a th:if="${listCustomer.hasNext()}" th:href="@{/customer/list(page = ${listCustomer.number +1},keyword =${keywordAfterCheck})}" class="btn btn-primary">Next</a>
+    <a th:href="@{/customer/list(page = ${listCustomer.totalPages -1},keyword =${keywordAfterCheck})}" class="btn btn-primary">Last</a>
 </div>
 <!--modal delete-->
 <!-- Button trigger modal-->
