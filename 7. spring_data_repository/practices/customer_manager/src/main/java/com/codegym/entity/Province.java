@@ -15,7 +15,7 @@ public class Province {
     private int id_province;
     private String name_province;
 
-    @OneToMany(mappedBy = "province", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "province",cascade = CascadeType.ALL)
     private Set<Customer> customerSet;
 
     public Province() {

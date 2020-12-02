@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e9a4dd08-7a4b-4bb7-9377-a8d882cf1e03" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/service/impl/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/listuser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../7. spring_data_repository/practices/customer_manager/src/main/java/com/codegym/entity/Province.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../7. spring_data_repository/practices/customer_manager/src/main/java/com/codegym/entity/Province.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../8.Validation/practices/c07g-spring-validation/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../8.Validation/practices/c07g-spring-validation/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1l4EXmKqcBZOVDKVuSmI55zSCp5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="ForminputApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="forminput.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.codegym.ForminputApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e9a4dd08-7a4b-4bb7-9377-a8d882cf1e03" name="Default Changelist" comment="" />
+      <created>1606848004877</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606848004877</updated>
+      <workItem from="1606848009677" duration="2783000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606848050742">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="223" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1606848050742" />
+    <state x="574" y="117" key="#com.intellij.ide.util.MemberChooser" timestamp="1606849127294">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="574" y="117" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1606849127294" />
+    <state width="1493" height="211" key="GridCell.Tab.0.bottom" timestamp="1606850800179">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="211" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1606850800179" />
+    <state width="1493" height="211" key="GridCell.Tab.0.center" timestamp="1606850800178">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="211" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1606850800178" />
+    <state width="1493" height="211" key="GridCell.Tab.0.left" timestamp="1606850800178">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="211" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1606850800178" />
+    <state width="1493" height="211" key="GridCell.Tab.0.right" timestamp="1606850800179">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1606850800179" />
+    <state width="1493" height="211" key="GridCell.Tab.1.bottom" timestamp="1606850800179">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="211" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1606850800179" />
+    <state width="1493" height="211" key="GridCell.Tab.1.center" timestamp="1606850800179">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="211" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1606850800179" />
+    <state width="1493" height="211" key="GridCell.Tab.1.left" timestamp="1606850800179">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="211" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1606850800179" />
+    <state width="1493" height="211" key="GridCell.Tab.1.right" timestamp="1606850800179">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="211" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1606850800179" />
+  </component>
+</project>
