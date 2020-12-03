@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="common::header">
+</head>
+<body>
+<a th:href="@{/student/create}" class="btn btn-primary">Create New Student</a>
+<div class="container">
+    <table class="table" border="1">
+        <thead class="thead-dark">
+            <tr>
+                <td>Id</td>
+                <td>Name</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="student:${listStudent}">
+                <td th:text="${student.id}"></td>
+                <td th:text="${student.name}"></td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+<footer th:replace="common::footer"></footer>
+</body>
+<div th:replace="common::scrip"></div>
+</html>

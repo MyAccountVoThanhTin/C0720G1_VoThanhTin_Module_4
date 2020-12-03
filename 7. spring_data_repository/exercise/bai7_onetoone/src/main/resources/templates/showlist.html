@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout::header">
+</head>
+<body>
+<a th:href="@{/student/create}" class="btn btn-primary">Create New Student</a>
+    <div class="container">
+        <table class="table table-striped" border="1">
+            <thead class="thead-dark">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Birthday</th>
+                <th>Adress</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="student : ${listStudent}">
+                <td th:text="${student.id}"></td>
+                <td th:text="${student.name}"></td>
+                <td th:text="${student.age}"></td>
+                <td th:text="${student.birthday}"></td>
+                <td th:text="${student.address.name_address}"></td>
+            </tr>
+            </tbody>
+        </table>
+        <a th:if="${listStudent.hasPrevious()}" th:href="@{/student/list(page=${listStudent.number -1})}" class="btn btn-primary">Previous</a>
+        <a th:if="${listStudent.hasNext()}" th:href="@{/student/list(page=${listStudent.number +1})}" class="btn btn-primary">Next</a>
+        <a th:href="@{/student/list(page=${listStudent.totalPages -1})}" class="btn btn-primary">Last</a>
+    </div>
+<footer th:replace="layout::footer"></footer>
+</body>
+<div th:replace="layout::scrip"></div>
+</html>
