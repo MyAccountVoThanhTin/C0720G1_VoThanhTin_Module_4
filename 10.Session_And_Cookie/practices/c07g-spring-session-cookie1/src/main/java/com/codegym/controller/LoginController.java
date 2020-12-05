@@ -12,11 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 @Controller
 @SessionAttributes("user")
 public class LoginController {
-
-    @ModelAttribute("user")
-    public User createUserSession() {
-        return new User();
-    }
+//    @ModelAttribute("user")
+//    public User createUserSession() {
+//        return new User();
+//    }
 
     @GetMapping("/login")
     public String goLogin(Model model,

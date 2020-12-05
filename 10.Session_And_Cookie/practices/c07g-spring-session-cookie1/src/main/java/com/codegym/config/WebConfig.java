@@ -1,16 +1,13 @@
 package com.codegym.config;
 
-import com.codegym.entity.ShoppingCart;
-import com.codegym.entity.User;
+import com.codegym.aspect.StudentLogger;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ResourceBundleMessageSource;
-import org.springframework.core.annotation.AnnotationUtils;
 
 @Configuration
 public class WebConfig {
-
     @Bean
     public MessageSource messageSource() {
         ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
@@ -18,4 +15,8 @@ public class WebConfig {
         return messageSource;
     }
 
+    @Bean
+    public StudentLogger createLogger() {
+        return new StudentLogger();
+    }
 }

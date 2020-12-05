@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout::header">
+</head>
+<body>
+    <div class="container-fluid">
+        <form action="/product/create" method="post" th:object="${product}">
+            <div class="form-group">
+                <label class="label" for="exampleId">Id</label>
+                <input placeholder="ID IS AUTO" readonly type="text" class="form-control" id="exampleId" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label class="label" for="exampleName">Name</label>
+                <input th:field="${product.product_name}" type="text" class="form-control" id="exampleName" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label class="label" for="examplePrice">Price</label>
+                <input th:field="${product.product_pricce}" type="text" class="form-control" id="examplePrice" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label class="label" for="exampleAmount">Amount</label>
+                <input th:field="${product.amount}" type="text" class="form-control" id="exampleAmount" aria-describedby="emailHelp">
+            </div>
+            <input type="submit" value="Save" class="btn btn-primary">
+        </form>
+    </div>
+<footer th:replace="layout::footer"></footer>
+</body>
+<div th:replace="layout::scrip"></div>
+</html>
