@@ -7,9 +7,10 @@
        <a th:if="${user.getUserName() eq 'VoThanhTin'}" th:href="@{/product/create}" class="btn btn-primary">Create New Product</a></span>
     </div>
     <br>
-    <div class="container">
-        <table class="table table-striped" border="1">
-            <thead>
+    <div class="container-fluid row">
+        <div class="col-9">
+            <table class="table table-striped" border="1">
+                <thead>
                 <tr>
                     <th>Id</th>
                     <th>Name</th>
@@ -18,8 +19,8 @@
                     <th>View</th>
                     <th>Buy</th>
                 </tr>
-            </thead>
-            <tbody>
+                </thead>
+                <tbody>
                 <tr th:each="product:${listproduct}">
                     <td th:text="${product.product_id}"></td>
                     <td th:text="${product.product_name}"></td>
@@ -27,34 +28,43 @@
                     <td th:text="${product.amount}"></td>
                     <td><a th:href="@{/product/view/{id}(id=${product.getProduct_id()})}" class="btn btn-primary">View Details</a></td>
                     <td>
-                        <a th:id="${product.getProduct_id()}" onclick="choose(this.getAttribute('id'))" class="btn btn-primary">Buy</a>
+                        <a th:if="${user.getUserName() eq 'VoThanhTin'}" th:href="@{/cart/viewcart/{id}(id=${product.getProduct_id()})}" class="btn btn-primary">Buy</a>
                     </td>
                 </tr>
-            </tbody>
-        </table>
-        <a th:if="${listproduct.hasPrevious()}" th:href="@{/product/list(page=${listproduct.number -1})}" class="btn btn-primary">Previous</a>
-        <th:block th:each="i:${#numbers.sequence(0, listproduct.totalPages -1)}">
-            <a th:href="@{/product/list(page = ${i})}" th:text="${i + 1}" class="btn btn-primary"></a>
-        </th:block>
-        <a th:if="${listproduct.hasNext()}" th:href="@{/product/list(page=${listproduct.number +1})}" class="btn btn-primary">Next</a>
-        <a th:href="@{/product/list(page=${listproduct.totalPages -1})}" class="btn btn-primary">Last</a>
+                </tbody>
+            </table>
+            <a th:if="${listproduct.hasPrevious()}" th:href="@{/product/list(page=${listproduct.number -1})}" class="btn btn-primary">Previous</a>
+            <th:block th:each="i:${#numbers.sequence(0, listproduct.totalPages -1)}">
+                <a th:href="@{/product/list(page = ${i})}" th:text="${i + 1}" class="btn btn-primary"></a>
+            </th:block>
+            <a th:if="${listproduct.hasNext()}" th:href="@{/product/list(page=${listproduct.number +1})}" class="btn btn-primary">Next</a>
+            <a th:href="@{/product/list(page=${listproduct.totalPages -1})}" class="btn btn-primary">Last</a>
+        </div>
+        <div class="col-3"  th:if="${user.getUserName() eq 'VoThanhTin'}">
+            <h2 style="color: #5379fa;background-color: #33c58d;text-align: center;width: 100%">Your Cart</h2>
+            <table class="table table-striped" border="1">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name Product</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="productcart : ${listproductcart}">
+                        <td th:text="${productcart.product_id}"></td>
+                        <td th:text="${productcart.product_name}"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
     <br>
-    <div class="container">
-        <form action="/cart/viewcart" method="post">
-            <button type="submit"  name="mycart" id="mycart">View Cart</button>
-        </form>
-<!--        <a href="/product/viewcart" class="btn btn-primary" id="mycart" name="mycart">View My Cart</a>-->
-    </div>
-
-
     <!-- Button trigger modal -->
     <footer th:replace="layout::footer"></footer>
 </body>
 <div th:replace="layout::scrip"></div>
 <script>
-    function choose(id) {
-        document.getElementById("mycart").value += id + ",";
-    }
+
 </script>
 </html>

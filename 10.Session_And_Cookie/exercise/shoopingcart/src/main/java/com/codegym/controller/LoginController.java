@@ -12,7 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping("/login")
-@SessionAttributes("user")
+@SessionAttributes({"user","list"})
 public class LoginController {
     @Autowired
     private LoginService loginService;
@@ -21,27 +21,20 @@ public class LoginController {
     private UserService userService;
 
     @GetMapping("")
-    public ModelAndView login(){
-        return new ModelAndView("/login","login", new Login());
+    public ModelAndView login(@ModelAttribute("user") User user){
+        ModelAndView modelAndView = new ModelAndView("/login","login", new Login());
+        modelAndView.addObject("user",user);
+        return modelAndView;
     }
 
     @GetMapping("/gohome")
-    public ModelAndView gohome(){
-        return new ModelAndView("/index");
+    public ModelAndView gohome(@ModelAttribute("user") User user){
+        ModelAndView modelAndView = new ModelAndView("/index","user",user);
+        return modelAndView;
     }
 
     @PostMapping("/checklogin")
     public String checklogin(@ModelAttribute("user") User user, @ModelAttribute Login login, Model model){
-//        Login login1 = loginService.findByName(login.getUserName());
-//        if((login.getUserName() == "") || (login.getPassword() == "")){
-//            model.addAttribute("login", new Login());
-//            return "login";
-//        }else if ((loginService.findByName(login.getUserName()) == null){
-//            model.addAttribute("login", new Login());
-//            return "login";
-//        }else{
-//            return
-//        }
         if(!(login.getUserName().equals("")) && !(login.getPassword().equals(""))){
             Login login1 = loginService.findByName(login.getUserName());
             if (login.getUserName().equals(login1.getUserName()) && login.getPassword().equals(login1.getPassword())){

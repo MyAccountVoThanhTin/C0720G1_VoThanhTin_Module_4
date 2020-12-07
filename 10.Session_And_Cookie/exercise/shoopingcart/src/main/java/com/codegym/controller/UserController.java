@@ -13,7 +13,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import java.util.List;
 
 @Controller
-@SessionAttributes("user")
+@SessionAttributes({"user","list"})
 @RequestMapping({"","/user"})
 public class UserController {
     @Autowired

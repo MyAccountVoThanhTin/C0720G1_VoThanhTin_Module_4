@@ -14,9 +14,12 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Controller
 @RequestMapping({"/", "/product"})
-@SessionAttributes("user")
+@SessionAttributes({"user","list"})
 public class ProductController {
     @Autowired
     private ProductService productService;
@@ -30,6 +33,11 @@ public class ProductController {
     }
 
 
+    @ModelAttribute("list")
+    public List<Product> setUpList() {
+        return new ArrayList<>();
+    }
+
     @GetMapping("")
     public ModelAndView goHome() {
         ModelAndView modelAndView = new ModelAndView("/index");
@@ -37,8 +45,9 @@ public class ProductController {
     }
 
     @GetMapping("/list")
-    public String showlist(Model model, @PageableDefault(size = 2) Pageable pageable) {
+    public String showlist(Model model, @PageableDefault(size = 2) Pageable pageable,@ModelAttribute("user") User user) {
             model.addAttribute("listproduct", productService.findAll(pageable));
+            model.addAttribute("user",user);
             return "showlistproduct";
     }
 

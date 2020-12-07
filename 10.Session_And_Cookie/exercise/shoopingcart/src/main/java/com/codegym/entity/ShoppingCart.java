@@ -10,6 +10,7 @@ public class ShoppingCart {
     private int cart_id;
     @OneToOne(mappedBy = "shoppingCart")
     private User user;
+
     @OneToMany(mappedBy = "shoppingCart",cascade = CascadeType.ALL)
     private List<Product> productList;
 
