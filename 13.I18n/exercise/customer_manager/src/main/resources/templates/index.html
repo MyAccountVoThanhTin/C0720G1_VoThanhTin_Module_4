@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: header">
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-light bg-light">
+        <a th:href="@{/customer/create}" class="navbar-brand btn-primary">Create New Customer</a>
+        <form action="/customer/list" class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="keyword">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+</div>
+<div class="container">
+    <table class="table" id="table">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Date Of Birth</th>
+            <th scope="col">Image</th>
+            <th scope="col">Province</th>
+            <th scope="col">Delete</th>
+            <th scope="col">Edit</th>
+            <th scope="col">View Details</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="customer : ${listCustomer}">
+            <th scope="row" th:text="${customer.id}"></th>
+            <td th:text="${customer.firstName}"></td>
+            <td th:text="${customer.lastName}"></td>
+            <td th:text="${customer.dateOfBirth}"></td>
+            <td>
+                <button style="border: none" type="button" data-toggle="modal" data-target="#modelImage">
+                    <img data-toggle="tooltip" data-placement="top" th:title="${customer.getImage()}" onclick="getImage(this.getAttribute('src'))" th:src="@{'/'+${customer.image}}" class="img-thumbnail" style="width: 50px;height: 50px"/>
+                </button>
+            </td>
+            <td th:text="${customer.province.getName_province()}"></td>
+            <td>
+                <button type="button" style="background-color: red" data-toggle="modal" data-target="#modelDelete">
+                    <a th:id="${customer.getId()}" th:src="@{'/'+${customer.image}}" th:name="${customer.getFirstName()+' '+customer.getLastName()}" onclick="deletecustomer(this.getAttribute('name'),this.getAttribute('src'),this.getAttribute('id'))" class="btn btn-danger">Delete</a>
+                </button>
+<!--                <a th:href="@{/customer/delete/{id}(id=${customer.id})}" class="btn btn-danger">Delete</a>-->
+            </td>
+            <td><a th:href="@{/customer/edit/{id}(id=${customer.id})}" class="btn btn-primary">Edit</a></td>
+            <td>action</td>
+        </tr>
+        </tbody>
+    </table>
+    <a th:if="${listCustomer.hasPrevious()}" th:href="@{/customer/list(page = ${listCustomer.number -1},keyword =${keywordAfterCheck})}" class="btn btn-primary">Previous</a>
+    <span th:text="${listCustomer.number + 1}"></span>/<span th:text="${listCustomer.totalPages}"></span>
+    <a th:if="${listCustomer.hasNext()}" th:href="@{/customer/list(page = ${listCustomer.number +1},keyword =${keywordAfterCheck})}" class="btn btn-primary">Next</a>
+    <a th:href="@{/customer/list(page = ${listCustomer.totalPages -1},keyword =${keywordAfterCheck})}" class="btn btn-primary">Last</a>
+</div>
+<!--modal delete-->
+<!-- Button trigger modal-->
+<div class="modal fade" id="modelDelete" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Why do you want delete <span><input  style="border: none" type="text" id="namedelete" readonly/></span></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form action="/customer/delete" method="post">
+                <input type="hidden" name="delete" id="modaldelete">
+                <div class="modal-body">
+                    <img id="imagedelete" class="img-thumbnail" style="width: 100%;height: 100%"/>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Delete</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<!--image-->
+<div class="modal fade" id="modelImage" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+<!--                <h5 class="modal-title">Modal title</h5>-->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class=" container">
+                <img id="image" class="img-thumbnail" style="width: 100%;height: 100%"/>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<footer th:replace="layout::footer"></footer>
+</body>
+<div th:replace="layout::scrip"></div>
+<script th:inline="javascript">
+    function getImage(image) {
+        document.getElementById("image").src = image;
+    }
+
+    function deletecustomer(name,src,id) {
+        document.getElementById("namedelete").value = name + ' ?';
+        document.getElementById("imagedelete").src = src;
+        document.getElementById("modaldelete").value = id;
+    }
+</script>
+</html>

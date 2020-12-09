@@ -45,9 +45,11 @@ public class ProductController {
     }
 
     @GetMapping("/list")
-    public String showlist(Model model, @PageableDefault(size = 2) Pageable pageable,@ModelAttribute("user") User user) {
+    public String showlist(Model model, @PageableDefault(size = 2) Pageable pageable,@ModelAttribute("user") User user,
+                           @ModelAttribute("list") List<Product> list) {
             model.addAttribute("listproduct", productService.findAll(pageable));
             model.addAttribute("user",user);
+            model.addAttribute("listproductcart",list);
             return "showlistproduct";
     }
 

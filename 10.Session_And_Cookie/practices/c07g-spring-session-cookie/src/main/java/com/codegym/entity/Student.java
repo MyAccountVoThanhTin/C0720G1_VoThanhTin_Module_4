@@ -1,11 +1,11 @@
 package com.codegym.entity;
 
 import com.codegym.annotation.TinName;
+import com.codegym.annotation.TinName2;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotBlank;
 
 @Entity(name = "student")
 public class Student implements Validator {
@@ -20,7 +20,8 @@ public class Student implements Validator {
 //    @Email
     @TinName
     private String name;
-
+    @TinName2
+    private String name2;
     @Column(name = "date_of_birth", columnDefinition = "DATE")
     private String dateOfBirth;
 

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="find">Find</button>
+<input type="text" id="idPhone">
+<p id="produer"></p>
+<p id="model"></p>
+<p id="price"></p>
+
+------------------------
+<p>Producer: <input id="producerPhone" type="text"></p>
+<p>Model: <input id="modelPhone" type="text"></p>
+<p>Price: <input type="text" id="pricePhone"></p>
+<button id="btnRegister">Register</button>
+
+</body>
+<script src="jquery-3.5.1.min.js"></script>
+<script>
+    $("#find").click(function() {
+        let idPhone = $("#idPhone").val();
+        $.ajax({
+            type: "GET", //GET, DELETE, PUT...
+            url: "http://localhost:8081/smartphone/find/" + idPhone,
+            // data: "{empid: " + empid + "}",
+            // contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            // dataType: "text",
+            success: function (smartPhone) {
+                $("#produer").text(smartPhone.producer);
+                $("#model").text(smartPhone.model);
+                $("#price").text(smartPhone.price);
+            },
+            error: function (result) {
+            }
+        });
+    });
+
+    $("#btnRegister").click(function() {
+        let objPhone ={
+            producer: $("#producerPhone").val(),
+            model: $("#modelPhone").val(),
+            price: $("#pricePhone").val()
+        };
+
+        $.ajax({
+            type: "POST", //GET, DELETE, PUT...
+            url: "http://localhost:8081/smartphone/register",
+            data: JSON.stringify(objPhone),
+            contentType: "application/json; charset=utf-8",
+            success: function (smartPhone) {
+            },
+            error: function (result) {
+            }
+        });
+    });
+</script>
+</html>

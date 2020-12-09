@@ -43,6 +43,7 @@ public class LoginController {
                 return "index";
             }
         }
+        model.addAttribute("user",user);
         return "login";
     }
 }

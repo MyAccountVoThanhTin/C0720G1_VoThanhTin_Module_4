@@ -37,7 +37,7 @@
                     <span th:if="${student.grade >= 5 && student.grade <= 7}">Good</span>
                     <span th:if="${student.grade >= 8 && student.grade <= 10}">Very Good</span>
                 </td>
-                <td th:text="${student.classRoom.name}"></td>
+<!--                <td th:text="${student.classRoom.name}"></td>-->
                 <td><a th:href="@{/student/detail(id=${student.id})}">Detail student</a></td>
                 <td><a th:href="@{/student/detail/{id}(id=${student.id})}">Detail student</a></td>
             </tr>
