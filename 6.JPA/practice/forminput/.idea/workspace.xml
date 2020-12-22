@@ -2,15 +2,106 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9a4dd08-7a4b-4bb7-9377-a8d882cf1e03" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/service/impl/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/listuser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../7. spring_data_repository/practices/customer_manager/src/main/java/com/codegym/entity/Province.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../7. spring_data_repository/practices/customer_manager/src/main/java/com/codegym/entity/Province.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../8.Validation/practices/c07g-spring-validation/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../8.Validation/practices/c07g-spring-validation/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/practices-spring-security/src/main/java/com/codegym/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/practices-spring-security/src/main/java/com/codegym/controller/AccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/practices-spring-security/src/main/java/com/codegym/entity/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/practices-spring-security/src/main/java/com/codegym/entity/MyAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/practices-spring-security/src/main/java/com/codegym/repository/AccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/practices-spring-security/src/main/java/com/codegym/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/practices-spring-security/src/main/java/com/codegym/service/inpl/AccountServiceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/practices-spring-security/src/main/java/com/codegym/service/inpl/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/practices-spring-security/src/main/java/com/codegym/untils/EncrytedPasswordUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/practices-spring-security/src/main/resources/templates/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/practices-spring-security/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/security/src/main/java/com/codegym/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/security/src/main/java/com/codegym/controller/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/security/src/main/java/com/codegym/entity/AppRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/security/src/main/java/com/codegym/entity/AppUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/security/src/main/java/com/codegym/entity/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/security/src/main/java/com/codegym/repository/AppRoleDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/security/src/main/java/com/codegym/repository/AppUserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/security/src/main/java/com/codegym/servies/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/security/src/main/java/com/codegym/untils/EncrytedPasswordUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/security/src/main/java/com/codegym/untils/WebUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/security/src/main/resources/templates/403Page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/security/src/main/resources/templates/_menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/security/src/main/resources/templates/adminPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/security/src/main/resources/templates/loginPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/security/src/main/resources/templates/logoutSuccessfulPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/security/src/main/resources/templates/userInfoPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/security/src/main/resources/templates/welcomePage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/controller/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/controller/FanpageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/entity/AttachService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/entity/Contract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/entity/ContractDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/entity/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/entity/CustomerType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/entity/Division.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/entity/EducationDegree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/entity/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/entity/MyAccountDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/entity/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/entity/RentType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/entity/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/entity/ServiceType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/repository/AttachServiceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/repository/ContractDetailsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/repository/ContractRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/repository/CustomerTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/repository/DivisionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/repository/EducationDegreeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/repository/EmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/repository/PositionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/repository/RentTypeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/repository/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/repository/ServiceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/repository/ServiceTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/service/AttachService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/service/DivisionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/service/EducationDegreeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/service/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/service/PositionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/service/impl/AttachServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/service/impl/DivisionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/service/impl/EducationDegreeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/service/impl/EmployeeServieImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/service/impl/PositionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/service/impl/UserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/java/com/codegym/untils/EncrytedPasswordUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/resources/templates/createEmployee.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/case-study/src/main/resources/templates/listemployee.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/CGDN-SpringBoot-SpringSecurity-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/CGDN-SpringBoot-SpringSecurity-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/CGDN-SpringBoot-SpringSecurity-master/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/CGDN-SpringBoot-SpringSecurity-master/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/CGDN-SpringBoot-SpringSecurity-master/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/CGDN-SpringBoot-SpringSecurity-master/src/main/java/codegym/danang/demo/DemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/CGDN-SpringBoot-SpringSecurity-master/src/main/java/codegym/danang/demo/config/WebSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/CGDN-SpringBoot-SpringSecurity-master/src/main/java/codegym/danang/demo/controller/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/CGDN-SpringBoot-SpringSecurity-master/src/main/java/codegym/danang/demo/dao/AppRoleDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/CGDN-SpringBoot-SpringSecurity-master/src/main/java/codegym/danang/demo/dao/AppUserDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/CGDN-SpringBoot-SpringSecurity-master/src/main/java/codegym/danang/demo/entity/AppRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/CGDN-SpringBoot-SpringSecurity-master/src/main/java/codegym/danang/demo/entity/AppUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/CGDN-SpringBoot-SpringSecurity-master/src/main/java/codegym/danang/demo/entity/UserRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/CGDN-SpringBoot-SpringSecurity-master/src/main/java/codegym/danang/demo/service/UserDetailsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/CGDN-SpringBoot-SpringSecurity-master/src/main/java/codegym/danang/demo/util/EncrytedPasswordUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/CGDN-SpringBoot-SpringSecurity-master/src/main/java/codegym/danang/demo/util/WebUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/CGDN-SpringBoot-SpringSecurity-master/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/CGDN-SpringBoot-SpringSecurity-master/src/main/resources/templates/403Page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/CGDN-SpringBoot-SpringSecurity-master/src/main/resources/templates/_menu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/CGDN-SpringBoot-SpringSecurity-master/src/main/resources/templates/adminPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/CGDN-SpringBoot-SpringSecurity-master/src/main/resources/templates/loginPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/CGDN-SpringBoot-SpringSecurity-master/src/main/resources/templates/logoutSuccessfulPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/CGDN-SpringBoot-SpringSecurity-master/src/main/resources/templates/userInfoPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/CGDN-SpringBoot-SpringSecurity-master/src/main/resources/templates/welcomePage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../14.Bao_Mat_Ung_Dung/practices/CGDN-SpringBoot-SpringSecurity-master/src/test/java/codegym/danang/demo/DemoApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../7. spring_data_repository/practices/customer_manager/src/main/java/com/codegym/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../7. spring_data_repository/practices/customer_manager/src/main/java/com/codegym/entity/Customer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +153,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../7. spring_data_repository/practices/c07g-spring-data-repository" />
   </component>
   <component name="RunManager">
     <configuration name="ForminputApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -86,6 +178,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606848004877</updated>
       <workItem from="1606848009677" duration="2783000" />
+      <workItem from="1607917180703" duration="13000" />
     </task>
     <servers />
   </component>
@@ -101,6 +194,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="574" y="117" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1606849127294" />
+    <state x="549" y="188" key="FileChooserDialogImpl" timestamp="1607917191646">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="188" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1607917191646" />
     <state width="1493" height="211" key="GridCell.Tab.0.bottom" timestamp="1606850800179">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

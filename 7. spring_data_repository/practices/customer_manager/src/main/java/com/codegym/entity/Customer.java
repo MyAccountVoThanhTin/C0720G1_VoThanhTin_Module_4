@@ -16,7 +16,6 @@ public class Customer {
     @Column(name = "date_of_birth",columnDefinition = "DATE")
     private String dateOfBirth;
     private String image;
-
     @ManyToOne
     @JoinColumn(name = "id_province", nullable = false, referencedColumnName = "id_province")
     private Province province;

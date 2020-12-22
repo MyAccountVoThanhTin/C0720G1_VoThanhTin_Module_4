@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+<body>
+
+<div>
+    <a href="/themmoi" class="btn btn-primary">Them Moi</a>
+</div>
+<div>
+    <form action="/timkiem">
+        <input type="text" name="timkiem" placeholder="Ten Khach Hang">
+        <input type="submit" value="Tim Kiem">
+    </form>
+</div>
+<div class="container-fluid">
+    <table class="table-striped" border="1">
+        <thead>
+        <tr>
+            <th scope="col">Ma Giao Dich</th>
+            <th scope="col">Ten Khach Hang</th>
+            <th scope="col">Loai Giao Dich</th>
+            <th scope="col">Ngay Giao Dich</th>
+            <th scope="col">Don Gia</th>
+            <th scope="col">Dien Tich</th>
+            <th scope="col">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="danhsachgd : ${danhSachGD}">
+            <td th:text="${danhsachgd.maGD}"></td>
+            <td th:each="khachhang : ${danhSachKH}"
+                th:if="${khachhang.getId()} eq ${danhsachgd.getKhachHang().getId()}"
+                th:text="${khachhang.getTenKH()}"></td>
+            <td th:text="${danhsachgd.loaiDV}"></td>
+            <td th:text="${danhsachgd.ngayGD}"></td>
+            <td th:text="${danhsachgd.donGia}"></td>
+            <td th:text="${danhsachgd.dienTich}"></td>
+            <td>
+                <a th:href="@{/edit/{id}(id = ${danhsachgd.getId()})}" class="btn btn-primary">Chi tiet</a>
+<!--                <span><a onclick="deleteEmployee(this.getAttribute('id'),this.getAttribute('name'))"-->
+<!--                         th:name="${employee.getEmployeeName()}" th:id="${employee.getEmployeeId()}"-->
+<!--                         sec:authorize="hasRole('ADMIN')" data-toggle="modal" data-target="#modelId"-->
+<!--                         style="color: white" class="btn btn-danger">Delete</a></span>-->
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <a th:if="${danhSachGD.hasPrevious()}" th:href="@{/list(page = ${danhSachGD.number - 1})}"
+       class="btn btn-primary">Previous</a>
+    <th:block th:each="i : ${#numbers.sequence(0,danhSachGD.totalPages - 1)}">
+        <a th:href="@{/list(page=${i})}" class="btn btn-primary" th:text="${i+1}"></a>
+    </th:block>
+    <a th:if="${danhSachGD.hasNext()}" th:href="@{/list(page=${danhSachGD.number +1})}"
+       class="btn btn-primary">Next</a>
+    <a th:href="@{/list(page=${danhSachGD.totalPages -1})}" class="btn btn-primary">Last</a>
+</div>
+<!-- Button trigger modal -->
+<!--<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">-->
+<!--    Launch-->
+<!--</button>-->
+
+<!-- Modal -->
+<div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Body
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+</body>
+</html>
